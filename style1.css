@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Roboto Slab', serif;
+    background: linear-gradient(to bottom, #c0c0c0, #ffffff, #808080);
+    overflow-y: scroll;
+}
+
+.container {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to bottom, #6495ed, #add8e6, #6495ed);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 20px 50px #000;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#check {
+    display: none;
+}
+
+.signup{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.check-signup {
+    text-align: center;
+    color: #add8e6;
+    background: #6495ed;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+    border: 1px solid lightblue;
+    border-radius: 15px 60px;
+    padding: 5px;
+    box-shadow: 3px 5px 40px #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    position: relative;
+    top: 126px;
+    z-index: 3;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+
+#check:checked ~ .signup label {
+    transform:translatey(-126px);
+}
+
+.signup label:hover {
+    background: linear-gradient(to left, #4169e1, 	#87ceeb, #4682b4);
+    color: #ffff;
+}
+
+
+.signup input {
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.signup button {
+    width: 50%;
+    height: 30px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    background: #6495ed;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to left, #6495ed, #add8e6, #4682b4);
+    color: #6495ed;
+}
+
+.animated-element {
+    width: 350px;
+    height: 350px;
+    background: rgba(240, 240, 240, .8);
+    border-radius: 15px;
+    transition: all 2s ease-in-out;
+    position: absolute;
+    z-index: 2;
+}
+
+#check:checked ~ .signup .animated-element {
+    transform: scale(0);
+}
+
+.container2 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(to bottom, #6495ed, #add8e6, #6495ed);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 10px 20px 50px #000;
+    box-sizing: border-box;
+    margin: auto;
+    position: relative;
+    display: flex;
+    order: 1;
+    margin-top: 10px;
+}
+
+#check-login {
+    display: none;
+}
+
+.login {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.check-login {
+    text-align: center;
+    color: #add8e6;
+    background: #6495ed;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+    border: 1px solid lightblue;
+    border-radius: 15px 60px;
+    padding: 5px;
+    box-shadow: 3px 5px 40px #ffffff;
+    margin-left: 50px;
+    margin-right: 50px;
+    box-sizing: border-box;
+    position: relative;
+    top: 126px;
+    z-index: 3;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+
+#check-login:checked ~ .login label {
+    transform:translatey(-126px);
+}
+
+.login label:hover {
+    background: linear-gradient(to left, #4169e1, 	#87ceeb, #4682b4);
+    color: #ffff;
+}
+
+
+.login input {
+    width: 60%;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+
+.login button {
+    width: 50%;
+    height: 30px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    background: #6495ed;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(to left, #6495ed, #add8e6, #4682b4);
+    color: #6495ed;
+}
+
+.animated-element1 {
+    width: 350px;
+    height: 350px;
+    background: rgba(240, 240, 240, .8);
+    border-radius: 15px;
+    transition: all 2s ease-in-out;
+    position: absolute;
+    z-index: 2;
+}
+
+#check-login:checked ~ .login .animated-element1 {
+    transform: scale(0);
+}
